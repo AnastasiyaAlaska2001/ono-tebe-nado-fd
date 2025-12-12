@@ -12,14 +12,16 @@
   <body>
     <header>
       <nav class="navigationHeader">
-        <li>главная</li>
-        <li class="underline withCircle">посмотреть лоты</li>
-        <li class="underline withCircle">об аукционе</li>
+        <a href="#">главная</a>
+        <span>○</span>
+        <a href="#" class="underline">посмотреть лоты</a>
+        <span>○</span>
+        <a href="#" class="underline">об аукционе</a>
       </nav>
-
-      <a><img alt="logo-black" src="./images/logo-black.svg" /></a>
-
-      <address class="addressHeader">
+      <a href="#">
+        <img class="logoBlack" alt="logo-black" src="./images/logo-black.svg" />
+      </a>
+      <address class="address withPadding">
         <a class="underline" href="tel:+99995555555">+9 999 555 5555</a>
         <a class="underline" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <a
@@ -31,54 +33,71 @@
 
     <main>
       <section class="cover">
-        <span>Оно</span>
-        <span>Тебе</span>
-        <span>Надо</span>
+        <h1 class="coverTitle">
+          <span class="wordContainer left">оно</span>
+          <span class="wordContainer center">тебе</span>
+          <span class="wordContainer right">надо</span>
+        </h1>
         <div class="coverSubtitle">
           <h2>Аукционы вещей, в которые никто не верил</h2>
           <button>Сделать ставку</button>
         </div>
       </section>
       <section class="lots">
-        <h1>Лоты</h1>
+        <h2>Лоты</h2>
         <ul class="lotsCardContainer">
           <li class="lotsCardListItem">
-            <h1>Фильм режиссёра, который бросил киношколу</h1>
-            <div>
-              Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-              ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-            </div>
+            <a href="#" class="leftCard">
+              <h3 class="lotsCardListItemHeader">
+                Фильм режиссёра, который бросил киношколу
+              </h3>
+              <p>
+                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+              </p>
+            </a>
           </li>
           <li class="lotsCardListItem">
-            <h1>
-              Книга, где описан один скучный день из жизни рекламного агента
-            </h1>
-            <div>
-              Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-              переходами на древнеанглийский. В ней одновременно рассказывается
-              о 16 июня 1904 года и об истории литературы, начиная с античных
-              времён. И это всё накладывается на эпическую поэму Гомера. Сколько
-              бы вы поставили на «Улисса» Джеймса Джойса?
-            </div>
+            <a href="#" class="centerCard">
+              <h3 class="lotsCardListItemHeader">
+                Книга, где описан один скучный день из жизни рекламного агента
+              </h3>
+              <p>
+                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
+                переходами на древнеанглийский. В ней одновременно
+                рассказывается о 16 июня 1904 года и об истории литературы,
+                начиная с античных времён. И это всё накладывается на эпическую
+                поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
+                Джойса?
+              </p>
+            </a>
           </li>
           <li class="lotsCardListItem">
-            <h1>Картина, которую повторит даже 5-летний сын маминой подруги</h1>
-            <div>
-              Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
-              похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...
-              Сколько бы вы на такое поставили, если бы не знали, что это — одна
-              из революционных работ Кандинского?
-            </div>
+            <a href="#" class="rightCard">
+              <h3 class="lotsCardListItemHeader">
+                Картина, которую повторит даже 5-летний сын маминой подруги
+              </h3>
+              <p>
+                Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                котиков... Сколько бы вы на такое поставили, если бы не знали,
+                что это — одна из революционных работ Кандинского?
+              </p>
+            </a>
           </li>
         </ul>
         <a class="lotsLookMoreLink underline">посмотреть больше</a>
       </section>
       <section class="about">
         <div>
-          <img alt="logo-white" class="aboutLogo" src="./images/logo-white.svg" />
+          <img
+            alt="logo-white"
+            class="aboutLogo"
+            src="./images/logo-white.svg"
+          />
         </div>
         <div class="aboutDescription">
-          <h1>Об аукционе</h1>
+          <h4>Об аукционе</h4>
           <div class="aboutDescriptionText">
             <p>
               Здесь вы не встретите очередное пафосное собрание невероятно
@@ -101,7 +120,7 @@
       </section>
     </main>
     <footer>
-      <address class="addressFooter">
+      <address class="address">
         <a class="underline" href="tel:+99995555555">+9 999 555 5555</a>
         <a class="underline" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <a
@@ -114,11 +133,11 @@
         <a class="underline">посмотреть лоты</a>
         <a class="underline">об аукционе</a>
       </nav>
-      <nav class="socialFooter">
-        <img alt="youtubeIcon" src="./images/yt.svg" />
-        <img alt="vkIcon" src="./images/vk.svg" />
-        <img alt="pinterest" src="./images/pinterest.svg" />
-      </nav>
+      <div class="socialFooter">
+        <a href="#"><img alt="youtubeIcon" src="./images/yt.svg" /></a>
+        <a href="#"><img alt="vkIcon" src="./images/vk.svg" /></a>
+        <a href="#"><img alt="pinterest" src="./images/pinterest.svg" /></a>
+      </div>
     </footer>
   </body>
 </html>

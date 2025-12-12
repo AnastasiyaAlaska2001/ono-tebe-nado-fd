@@ -11,94 +11,110 @@ header {
   padding-right: 50px;
 }
 
-header > a > img {
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logoBlack {
   width: 130px;
   height: 105px;
 }
 
 .navigationHeader {
   display: flex;
-  gap: 26px;
+  gap: 13px;
+  font-size: 18px;
 }
 
-.navigationHeader > li:nth-child(1) {
-  list-style-type: none;
+.navigationHeader > a:nth-child(1) {
+  text-decoration: none;
 }
 
 .withCircle {
   list-style-type: circle;
 }
 
-.addressHeader {
-  padding-left: 184px;
-
+.address {
   display: flex;
   flex-direction: column;
   gap: 3px;
+  font-style: normal;
 }
 
-.addressHeader > a {
+.address > a {
   cursor: pointer;
   font-size: 18px;
 }
 
+.withPadding {
+  padding-left: 148px;
+}
+
 .cover {
   min-height: 757px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  /* Считаю это более правильным решением, чем создавать <arcticle class='overlay'> и таким образом затемнять фон бэкграунда. */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/cover.jpg");
   background-size: cover;
-
+  background-position: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-
-  position: relative;
+  gap: 108px;
+  justify-content: center;
 }
 
-.cover > span {
-  position: absolute;
+.coverTitle {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 165px;
 }
 
-.cover > span:nth-child(1) {
-  top: 165px;
-  right: 764px;
-  bottom: 477px;
-  left: 50px;
-}
-
-.cover > span:nth-child(2) {
-  top: 300px;
-  right: 381px;
-  bottom: 342px;
-  left: 381px;
-}
-
-.cover > span:nth-child(3) {
-  top: 435px;
-  right: 50px;
-  bottom: 207px;
-  left: 663px;
-}
-
-.cover > span {
+.wordContainer {
   font-size: 100px;
   font-weight: 700;
-  letter-spacing: 30px;
   color: white;
+  text-transform: uppercase;
+  line-height: 115%;
+  margin: 0;
+}
+
+.left {
+  align-self: flex-start;
+  text-align: left;
+}
+
+.center {
+  align-self: center;
+  text-align: center;
+}
+
+.right {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.coverTitle > span {
+  display: inline-block;
+  font-size: 100px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 28px;
   text-transform: uppercase;
   line-height: 115%;
 }
 
-.cover > .coverSubtitle {
+.coverSubtitle {
   display: flex;
   align-items: center;
   gap: 107px;
-
-  position: absolute;
-  bottom: 50px;
 }
 
-.cover > .coverSubtitle > h2 {
+.coverSubtitle > h2 {
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
@@ -107,7 +123,7 @@ header > a > img {
   color: #fff;
 }
 
-.cover > .coverSubtitle > button {
+.coverSubtitle > button {
   border: 1px solid #fff;
   width: 256px;
   height: 51px;
@@ -116,14 +132,14 @@ header > a > img {
   font-size: 22px;
   color: #fff;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .lots {
   margin: 180px 24px 0px 24px;
-  height: 723px;
 }
 
-.lots > h1 {
+.lots > h2 {
   font-size: 40px;
   text-transform: uppercase;
   padding-left: 40px;
@@ -139,7 +155,11 @@ header > a > img {
 }
 
 .lotsCardListItem {
-  height: 596px;
+  list-style-type: none;
+}
+
+.lotsCardListItem > a {
+  min-height: 596px;
   list-style-type: none;
   background-size: cover;
   padding: 48px 40px 48px 40px;
@@ -154,25 +174,25 @@ header > a > img {
   line-height: 120%;
 }
 
-.lotsCardListItem > h1 {
+.lotsCardListItemHeader {
   font-size: 22px;
   color: #fff;
   text-decoration: underline;
   text-transform: uppercase;
 }
 
-.lotsCardListItem:nth-child(1) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+.leftCard {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/card-lot-01.jpg");
 }
 
-.lotsCardListItem:nth-child(2) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+.centerCard {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/card-lot-02.jpg");
 }
 
-.lotsCardListItem:nth-child(3) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+.rightCard {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/card-lot-03.jpg");
 }
 
@@ -183,7 +203,6 @@ header > a > img {
 
 .about {
   display: grid;
-  height: 595px;
   grid-template-columns: 334px 1fr;
 
   margin-top: 118px;
@@ -212,10 +231,10 @@ header > a > img {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 24px;
 }
 
-.aboutDescription > h1 {
+.aboutDescription > h4 {
   font-size: 40px;
   text-transform: uppercase;
 }
@@ -231,12 +250,6 @@ header > a > img {
 .aboutDescriptionText > p {
   font-size: 20px;
   line-height: 24px;
-}
-
-.addressFooter {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
 }
 
 footer {
@@ -257,7 +270,7 @@ footer {
   align-items: center;
 }
 
-.socialFooter > img {
+.socialFooter > a {
   width: 48px;
   height: 48px;
 }
