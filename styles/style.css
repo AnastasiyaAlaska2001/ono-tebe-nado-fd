@@ -23,9 +23,6 @@ a {
   display: flex;
   gap: 32px;
   font-size: 18px;
-}
-
-.navigationHeaderList {
   list-style-type: circle;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
