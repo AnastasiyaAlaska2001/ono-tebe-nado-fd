@@ -283,7 +283,7 @@ footer {
   gap: 48px;
 } 
 
-.navigationFooterList{
+.navigationFooterList {
   display: flex;
   gap: 3px;
   justify-content: center;
@@ -301,6 +301,6 @@ footer {
   text-decoration: none !important;
 }
 
-.noCircle{
+.noCircle {
   list-style-type: none !important;
 }
