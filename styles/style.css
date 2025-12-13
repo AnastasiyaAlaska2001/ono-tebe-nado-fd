@@ -25,8 +25,7 @@ a {
   font-size: 18px;
 }
 
-.navigationFooterList > li,
-.navigationHeaderList > li {
+.navigationHeaderList {
   list-style-type: circle;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
@@ -49,7 +48,7 @@ a {
 }
 
 .withPadding {
-  padding-left: 204px;
+  padding-left: 184px;
 }
 
 .cover {
@@ -61,7 +60,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 108px;
+  gap: 106px;
   justify-content: center;
 }
 
@@ -75,28 +74,35 @@ a {
 }
 
 .wordContainer {
+  display: block;
+  padding: 0px;
   font-size: 100px;
   font-weight: 700;
   color: white;
 
   text-transform: uppercase;
   line-height: 115%;
-  margin: 0;
+
 }
+
+// letter-spacing создает в конце каждого контейнера wordContainer пространство равное ширине letter-spacing:30px. Было принято решение ограничить высоту этих элементов на ширину по контейнерам Figma (max-width). Иного решения я не вижу.
 
 .left {
   align-self: flex-start;
   text-align: left;
+  max-width: 286px;
 }
 
 .center {
   align-self: center;
   text-align: center;
+  max-width: 339px;
 }
 
 .right {
   align-self: flex-end;
   text-align: right;
+  max-width: 387px;
 }
 
 .coverTitle > span {
@@ -104,7 +110,7 @@ a {
   font-size: 100px;
   font-weight: 700;
   color: white;
-  letter-spacing: 28px;
+  letter-spacing: 30px;
   text-transform: uppercase;
   line-height: 115%;
 }
@@ -151,7 +157,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
-
+ 
   padding-bottom: 30px;
 }
 
@@ -162,6 +168,7 @@ a {
 .lotsCardListItem > a {
   min-height: 596px;
   list-style-type: none;
+  text-decoration: none;
   background-size: cover;
   padding: 48px 40px 48px 40px;
 
@@ -256,7 +263,7 @@ a {
 }
 
 footer {
-  margin-top: 207px;
+  margin-top: 180px;
   padding-right: 50px;
   padding-left: 50px;
   margin-bottom: 82px;
@@ -285,6 +292,9 @@ footer {
 
 .navigationFooterList {
   display: flex;
+  list-style-type: none;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
   gap: 3px;
   justify-content: center;
   align-items: center;
@@ -298,9 +308,9 @@ footer {
 }
 
 .active {
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 .noCircle {
-  list-style-type: none !important;
+  list-style-type: none;
 }
