@@ -11,14 +11,14 @@
   </head>
   <body>
     <header>
-      <nav class="navigationHeader">
-        <a href="#">главная</a>
-        <span>○</span>
-        <a href="#" class="underline">посмотреть лоты</a>
-        <span>○</span>
-        <a href="#" class="underline">об аукционе</a>
+      <nav>
+        <ul class="navigationHeaderList">
+          <li class="noCircle"><a href="#" class="active">главная</a></li>
+          <li><a href="#">посмотреть лоты</a></li>
+          <li><a href="#">об аукционе</a></li>
+        </ul>
       </nav>
-      <a href="#">
+      <a>
         <img class="logoBlack" alt="logo-black" src="./images/logo-black.svg" />
       </a>
       <address class="address withPadding">
@@ -47,7 +47,7 @@
         <h2>Лоты</h2>
         <ul class="lotsCardContainer">
           <li class="lotsCardListItem">
-            <a href="#" class="leftCard">
+            <a href="#" class="cardTypeFilm">
               <h3 class="lotsCardListItemHeader">
                 Фильм режиссёра, который бросил киношколу
               </h3>
@@ -58,7 +58,7 @@
             </a>
           </li>
           <li class="lotsCardListItem">
-            <a href="#" class="centerCard">
+            <a href="#" class="cardTypeBook">
               <h3 class="lotsCardListItemHeader">
                 Книга, где описан один скучный день из жизни рекламного агента
               </h3>
@@ -73,7 +73,7 @@
             </a>
           </li>
           <li class="lotsCardListItem">
-            <a href="#" class="rightCard">
+            <a href="#" class="cardTypePicture">
               <h3 class="lotsCardListItemHeader">
                 Картина, которую повторит даже 5-летний сын маминой подруги
               </h3>
@@ -97,7 +97,7 @@
           />
         </div>
         <div class="aboutDescription">
-          <h4>Об аукционе</h4>
+          <h2>Об аукционе</h2>
           <div class="aboutDescriptionText">
             <p>
               Здесь вы не встретите очередное пафосное собрание невероятно
@@ -128,10 +128,12 @@
           Амстердам</a
         >
       </address>
-      <nav class="menuFooter">
-        <a>главная</a>
-        <a class="underline">посмотреть лоты</a>
-        <a class="underline">об аукционе</a>
+      <nav>
+        <ul class="navigationFooterList">
+        <li class="noCircle"><a href="#" class="active">главная</a></li>
+        <li class="noCircle"><a href="#">посмотреть лоты</a></li>
+        <li class="noCircle"><a href="#">об аукционе</a></li>
+      </ul>
       </nav>
       <div class="socialFooter">
         <a href="#"><img alt="youtubeIcon" src="./images/yt.svg" /></a>
